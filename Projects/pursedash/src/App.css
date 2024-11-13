@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
-}
+/* src/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Centered Dashboard Container */
+.dashboard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 40px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  color: #333;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Title Styling */
+.dashboard-title {
+  font-size: 3em;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff6a3d, #ff527b);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-subtitle {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #666;
+  margin: 0;
+  padding-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+/* Card Style for Components */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button Styling */
+.button {
+  background: linear-gradient(135deg, #ff6a3d, #ff527b);
+  border: none;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff527b, #ff6a3d);
+  transform: translateY(-2px);
+}
+
+/* Input Styling */
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 12px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.progress {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+/* Fact Box Styling */
+.fact-card {
+  background: linear-gradient(135deg, #f8c291, #f67280);
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+}
+
+.fact-text {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.fact-button {
+  background-color: #ffffff;
+  color: #ff6a3d;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fact-button:hover {
+  transform: translateY(-2px);
+  background-color: #ff6a3d;
+  color: #ffffff;
 }

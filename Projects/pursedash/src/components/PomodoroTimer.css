@@ -1,0 +1,113 @@
+/* src/components/PomodoroTimer.css */
+
+/* Main Container */
+.pomodoro-container {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 450px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pomodoro-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Header Styling */
+.pomodoro-container h2 {
+  color: #3d3d3d;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Timer Display */
+.timer-display {
+  font-size: 3em;
+  color: #3d3d3d;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #e6e9f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  height: 12px;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.progress {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  height: 100%;
+  border-radius: 8px;
+  transition: width 1s linear;
+}
+
+/* Control Buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.controls button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border: none;
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls button:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+.controls button:active {
+  transform: scale(0.98);
+}
+
+/* Settings Section */
+.settings {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.settings label {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.settings input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 60px;
+  font-size: 1em;
+  text-align: center;
+  transition: border 0.3s ease;
+}
+
+.settings input:focus {
+  border: 1px solid #3498db;
+  outline: none;
+}
