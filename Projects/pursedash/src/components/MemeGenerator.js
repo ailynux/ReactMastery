@@ -1,12 +1,13 @@
 // src/components/MemeGenerator.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./MemeGenerator.css";
 
 function MemeGenerator() {
   const [meme, setMeme] = useState(null);
 
   useEffect(() => {
-    // Fetch a random meme from Meme API
+    // Fetch a random meme from the Meme API
     axios
       .get("https://meme-api.com/gimme")
       .then((response) => {
@@ -16,13 +17,19 @@ function MemeGenerator() {
   }, []);
 
   return (
-    <div>
-      <h2>Random Meme</h2>
+    <div className="meme-card">
+      <h2 className="meme-title">Random Meme</h2>
       {meme ? (
-        <img src={meme} alt="Random Meme" style={{ width: "300px" }} />
+        <img className="meme-image" src={meme} alt="Random Meme" />
       ) : (
-        <p>Loading...</p>
+        <p className="loading-text">Loading...</p>
       )}
+      <button
+        className="new-meme-button"
+        onClick={() => window.location.reload()}
+      >
+        Get Another Meme
+      </button>
     </div>
   );
 }

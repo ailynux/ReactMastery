@@ -1,0 +1,73 @@
+/* src/components/MemeGenerator.css */
+
+/* Main meme card container */
+.meme-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.meme-title {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+/* Meme image styling */
+.meme-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.meme-image:hover {
+  transform: scale(1.05);
+}
+
+/* Loading text styling */
+.loading-text {
+  font-size: 1.2em;
+  color: #fff;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Button styling */
+.new-meme-button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.new-meme-button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.new-meme-button:active {
+  background-color: #444;
+}

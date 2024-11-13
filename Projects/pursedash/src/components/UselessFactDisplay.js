@@ -1,7 +1,6 @@
-// src/components/UselessFactDisplay.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./UselessFactDisplay.css"; // Import the CSS file
+import "./UselessFactDisplay.css";
 
 function UselessFactDisplay() {
   const [fact, setFact] = useState("");
@@ -20,12 +19,10 @@ function UselessFactDisplay() {
   };
 
   return (
-    <div className="fact-card">
-      <h2 className="fact-title">Random Useless Fact</h2>
-      <p className="fact-text">{fact}</p>
-      <button className="fact-button" onClick={fetchFact}>
-        Get Another Fact
-      </button>
+    <div className="UselessFactDisplay">
+      <h2>Random Useless Fact</h2>
+      <p>{fact}</p>
+      <button onClick={fetchFact}>Get Another Fact</button>
     </div>
   );
 }

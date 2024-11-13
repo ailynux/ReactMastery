@@ -1,58 +1,38 @@
 /* src/components/UselessFactDisplay.css */
 
-.fact-card {
-  background: linear-gradient(135deg, #ffdd00, #fbb034);
-  color: #333;
-  border-radius: 15px;
+.UselessFactDisplay {
+  background-color: #ffffff67;
   padding: 20px;
-  max-width: 400px;
-  margin: 20px auto;
-  text-align: center;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 500px;
+  text-align: center;
 }
 
-.fact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.fact-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
-}
-
-.fact-text {
-  font-size: 1.2em;
+.UselessFactDisplay h2 {
   color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.UselessFactDisplay p {
+  color: #555;
+  font-size: 1.1rem;
   line-height: 1.5;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  margin: 15px 0;
 }
 
-.fact-button {
-  background-color: #333;
-  color: #ffdd00;
+.UselessFactDisplay button {
   padding: 10px 20px;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
 }
 
-.fact-button:hover {
-  background-color: #555;
-  transform: scale(1.1);
-}
-
-.fact-button:active {
-  background-color: #444;
+.UselessFactDisplay button:hover {
+  background-color: #0056b3;
 }

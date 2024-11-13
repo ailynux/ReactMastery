@@ -1,0 +1,180 @@
+/* src/components/TaskManager.css */
+
+/* Main Container */
+.task-manager-container {
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.task-manager-container h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Section */
+.task-input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.task-input-section input[type="text"],
+.task-input-section input[type="date"],
+.task-input-section select {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 150px;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-input-section input[type="text"]:focus,
+.task-input-section input[type="date"]:focus,
+.task-input-section select:focus {
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.task-input-section button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-input-section button:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-3px);
+}
+
+/* Task List */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task Item */
+.task-item {
+  background: #ffffff;
+  border: none;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.task-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Priority Badge */
+.priority-badge {
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  padding: 6px 12px;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.priority-badge.low {
+  background: #2ecc71;
+}
+
+.priority-badge.medium {
+  background: #f1c40f;
+}
+
+.priority-badge.high {
+  background: #e74c3c;
+}
+
+/* Task Details */
+.task-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.task-details span {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
+
+.task-details small {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Task Actions */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-actions button:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+.task-actions button.delete {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.task-actions button.delete:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+}
+
+/* Task Complete/Undo Style */
+.task-completed {
+  text-decoration: line-through;
+  color: #bbb;
+  opacity: 0.8;
+}
