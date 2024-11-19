@@ -1,6 +1,6 @@
 # ReactMastery (work in progress -updating)
 
-Welcome to **ReactMastery** – a curated learning repository designed to take you from the fundamentals of React to advanced techniques and real-world applications. Dive in to master React concepts through progressive modules, hands-on exercises, and practical projects. 🚀
+Welcome to **ReactMastery** – a curated learning repository designed to take you from the fundamentals of React to advanced techniques and real-world applications. Dive in to master React concepts through progressive modules, hands-on exercises, and practical projects. 🚀 - continuing work
 
 ## Table of Contents
 
